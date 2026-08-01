@@ -2,108 +2,113 @@
 
 # 🚢 Titanic Data Cleaning & Exploratory Data Analysis (EDA)
 
-### 📊 End-to-End Data Cleaning, Preprocessing & Visualization using Python
+### 📊 Data Cleaning, Preprocessing & Visualization using Python
 
-<img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white">
-<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white">
-<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white">
-<img src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge">
-<img src="https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge">
-<img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge">
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange?style=for-the-badge)
+![Seaborn](https://img.shields.io/badge/Seaborn-Data%20Visualization-blue?style=for-the-badge)
 
-### ⭐ A complete beginner-friendly Data Analytics project demonstrating Data Cleaning, Data Preprocessing, Exploratory Data Analysis (EDA), Feature Engineering, and Data Visualization using the Titanic Dataset.
+**An end-to-end Data Cleaning and Exploratory Data Analysis (EDA) project using the Titanic Dataset.**
 
 </div>
 
 ---
 
-# 📖 Project Overview
+# 📌 Problem Statement
 
-This project demonstrates a complete **Data Analytics workflow** using the famous **Titanic Dataset**.
+Real-world datasets are rarely clean and often contain missing values, duplicate records, inconsistent data types, and poorly formatted feature names. These issues reduce the quality of analysis and negatively impact machine learning models.
 
-The primary objective is to transform raw data into a clean, structured, and analysis-ready dataset by applying industry-standard preprocessing techniques.
+The objective of this project is to clean and preprocess the Titanic dataset by handling missing values, removing duplicate records, converting data types, standardizing column names, and preparing the dataset for exploratory data analysis (EDA). The project also aims to visualize passenger characteristics and identify factors influencing survival.
 
-After cleaning the dataset, extensive **Exploratory Data Analysis (EDA)** is performed using professional visualizations and statistical summaries to uncover patterns related to passenger survival.
+---
+
+# 📂 Dataset Details
+
+**Dataset Name:** Titanic Dataset
+
+**Source:** Data Science Dojo (GitHub)
+
+**Dataset Link**
+
+https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv
+
+### Dataset Information
+
+| Attribute | Description |
+|-----------|-------------|
+| Records | 891 |
+| Features | 12 |
+| File Format | CSV |
+| Domain | Transportation / Survival Prediction |
+
+### Features Used
+
+| Column | Description |
+|---------|-------------|
+| PassengerId | Unique Passenger ID |
+| Survived | Survival Status (0 = No, 1 = Yes) |
+| Pclass | Passenger Class |
+| Name | Passenger Name |
+| Sex | Gender |
+| Age | Passenger Age |
+| SibSp | Number of Siblings/Spouses |
+| Parch | Number of Parents/Children |
+| Ticket | Ticket Number |
+| Fare | Ticket Fare |
+| Cabin | Cabin Number |
+| Embarked | Boarding Port |
 
 ---
 
 # 🎯 Objectives
 
-✔ Load Raw Dataset
-
-✔ Inspect Dataset Structure
-
-✔ Handle Missing Values
-
-✔ Remove Duplicate Records
-
-✔ Convert Data Types
-
-✔ Rename Columns
-
-✔ Feature Engineering
-
-✔ Exploratory Data Analysis (EDA)
-
-✔ Generate Professional Visualizations
-
-✔ Create Summary Tables
-
-✔ Export Clean Dataset
+- Load the Titanic dataset
+- Inspect dataset quality
+- Handle missing values
+- Remove duplicate records
+- Convert appropriate data types
+- Rename columns for consistency
+- Perform Exploratory Data Analysis (EDA)
+- Generate statistical summaries
+- Create professional visualizations
+- Export a cleaned dataset
 
 ---
 
-# 🛠 Technologies Used
+# ⚙️ Approach
 
-| Technology | Purpose |
-|------------|----------|
-| Python | Programming Language |
-| Pandas | Data Cleaning & Manipulation |
-| NumPy | Numerical Computing |
-| Matplotlib | Data Visualization |
-| Seaborn | Statistical Visualization |
-| Google Colab / Jupyter Notebook | Development Environment |
+The project follows a structured data preprocessing and analysis pipeline.
+
+## Step 1 — Data Collection
+
+- Imported the Titanic dataset using Pandas.
+- Inspected dataset dimensions and missing values.
 
 ---
 
-# 📂 Dataset Information
+## Step 2 — Data Cleaning
 
-**Dataset:** Titanic Passenger Dataset
+The following preprocessing techniques were applied:
 
-**Source**
+### ✔ Duplicate Removal
 
-https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv
+- Removed duplicate records.
 
-**Dataset Size**
+### ✔ Missing Value Treatment
 
-- 891 Records
-- 12 Original Features
-
----
-
-# 🧹 Data Cleaning Process
-
-The following preprocessing steps were performed:
-
-### ✅ Removed Duplicate Records
-
-Duplicate observations were removed to improve data quality.
-
----
-
-### ✅ Missing Value Treatment
-
-| Column | Method |
-|---------|---------|
+| Column | Method Used |
+|---------|-------------|
 | Age | Filled using Median |
 | Embarked | Filled using Mode |
 | Cabin | Replaced with "Unknown" |
 
 ---
 
-### ✅ Data Type Conversion
+### ✔ Data Type Conversion
 
-Converted categorical columns into Category datatype:
+Converted categorical columns:
 
 - Survived
 - Pclass
@@ -116,111 +121,133 @@ Converted numerical column:
 
 ---
 
-### ✅ Feature Renaming
+### ✔ Column Renaming
 
-Column names were standardized into a clean naming format.
+Renamed columns into readable naming conventions.
 
-| Original | Renamed |
-|----------|-----------|
-| PassengerId | passenger_id |
-| Survived | survived |
-| Pclass | pclass |
-| SibSp | siblings_spouses |
-| Parch | parents_children |
-| Ticket | ticket_number |
-| Embarked | embarked_port |
+Example:
 
----
+PassengerId → passenger_id
 
-# 📈 Exploratory Data Analysis (EDA)
+SibSp → siblings_spouses
 
-The notebook contains **12 professional visualizations**.
+Parch → parents_children
 
-## 📊 Visualizations Included
-
-### Passenger Analysis
-
-- Survival Count
-- Survival by Passenger Class
-- Survival by Gender
-- Survival by Embarkation Port
-- Family Size Analysis
+Embarked → embarked_port
 
 ---
 
-### Distribution Analysis
+## Step 3 — Feature Engineering
 
-- Age Distribution
-- Fare Distribution
-- KDE Plot
-- Violin Plot
+Created a new feature:
+
+**Family Size**
+
+```
+Family Size = Siblings/Spouses + Parents/Children + 1
+```
+
+This feature was later used for survival analysis.
 
 ---
 
-### Relationship Analysis
+## Step 4 — Exploratory Data Analysis (EDA)
 
-- Correlation Heatmap
-- Scatter Plot
+Performed multiple visual analyses using:
+
+- Count Plot
+- Histogram
 - Box Plot
+- Violin Plot
+- Scatter Plot
+- KDE Plot
+- Heatmap
+- Pie Chart
 - Bar Plot
 
----
+Generated statistical summary tables for:
 
-### Pie Charts
-
-- Overall Survival Percentage
-- Passenger Distribution by Embarkation Port
-
----
-
-# 📋 Statistical Summary Tables
-
-The notebook automatically generates:
-
-- Dataset Summary
-- Missing Value Report
-- Data Type Summary
+- Missing Values
+- Data Types
 - Numerical Statistics
 - Survival Matrix
-- Port-wise Passenger Analysis
+- Port-wise Analysis
 
 ---
 
-# 🔍 Key Insights
+# 📊 Results
 
-📌 Female passengers had a significantly higher survival rate.
+The data cleaning and exploratory analysis produced several meaningful insights.
 
-📌 First-class passengers were more likely to survive.
+### Key Findings
 
-📌 Higher ticket fares were generally associated with higher survival probability.
+✅ Missing values were successfully handled.
 
-📌 Family size influenced survival outcomes.
+✅ Duplicate records were removed.
 
-📌 Missing values were successfully handled without discarding valuable observations.
+✅ Dataset was standardized and cleaned.
+
+✅ Female passengers had a significantly higher survival rate than male passengers.
+
+✅ First-class passengers showed the highest survival probability.
+
+✅ Higher ticket fares were generally associated with greater survival chances.
+
+✅ Family size influenced passenger survival.
+
+✅ The cleaned dataset is ready for Machine Learning and predictive modeling.
+
+---
+
+# 📈 Visualizations Included
+
+- Overall Survival Count
+- Survival by Passenger Class
+- Survival by Gender
+- Age Distribution
+- Fare Distribution
+- Correlation Heatmap
+- Family Size Analysis
+- Fare Density Plot
+- Scatter Plot
+- Violin Plot
+- Passenger Distribution by Port
+- Average Fare Analysis
 
 ---
 
 # 📁 Project Structure
 
 ```
-Titanic-Data-Cleaning-EDA
+Titanic-EDA/
 │
 ├── Titanic_EDA.ipynb
 ├── titanic_cleaned.csv
 ├── README.md
 ├── requirements.txt
 │
-├── images
-│   ├── survival_count.png
-│   ├── heatmap.png
-│   ├── violinplot.png
-│   ├── scatterplot.png
-│   ├── piechart.png
-│   └── boxplot.png
+├── dataset/
+│   └── titanic.csv
 │
-└── dataset
-    └── titanic.csv
+└── images/
+    ├── heatmap.png
+    ├── scatterplot.png
+    ├── boxplot.png
+    ├── violinplot.png
+    └── piechart.png
 ```
+
+---
+
+# 💻 Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Google Colab
+- Jupyter Notebook
 
 ---
 
@@ -229,13 +256,7 @@ Titanic-Data-Cleaning-EDA
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/Titanic-Data-Cleaning-EDA.git
-```
-
-Move into the project directory
-
-```bash
-cd Titanic-Data-Cleaning-EDA
+git clone https://github.com/yourusername/Titanic-EDA.git
 ```
 
 Install dependencies
@@ -244,133 +265,55 @@ Install dependencies
 pip install pandas numpy matplotlib seaborn
 ```
 
-Launch Jupyter Notebook
+Run the notebook
 
 ```bash
-jupyter notebook
+jupyter notebook Titanic_EDA.ipynb
 ```
 
 ---
 
-# 💻 Libraries Used
-
-```python
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-```
-
----
-
-# 📊 Project Workflow
-
-```
-Raw Dataset
-      │
-      ▼
-Load Dataset
-      │
-      ▼
-Data Inspection
-      │
-      ▼
-Data Cleaning
-      │
-      ▼
-Handle Missing Values
-      │
-      ▼
-Convert Data Types
-      │
-      ▼
-Feature Engineering
-      │
-      ▼
-Exploratory Data Analysis
-      │
-      ▼
-Statistical Summary
-      │
-      ▼
-Data Visualization
-      │
-      ▼
-Clean Dataset Export
-```
-
----
-
-# 🚀 Skills Demonstrated
+# 📚 Skills Demonstrated
 
 - Data Cleaning
 - Data Preprocessing
 - Exploratory Data Analysis
-- Python Programming
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Feature Engineering
 - Data Visualization
+- Feature Engineering
+- Python Programming
 - Statistical Analysis
 - Data Wrangling
 - Problem Solving
 
 ---
 
-# 🎓 Learning Outcomes
+# 🚀 Future Improvements
 
-After completing this project, you will understand:
-
-✔ Cleaning real-world datasets
-
-✔ Handling missing values
-
-✔ Working with categorical data
-
-✔ Feature engineering
-
-✔ Building professional EDA reports
-
-✔ Creating insightful visualizations
-
-✔ Preparing datasets for Machine Learning
+- Build Machine Learning models for survival prediction.
+- Develop an interactive dashboard using Streamlit or Power BI.
+- Perform feature selection and model evaluation.
+- Deploy the project as a web application.
 
 ---
 
-# 🔮 Future Enhancements
-
-- Machine Learning Prediction Model
-- Streamlit Dashboard
-- Power BI Dashboard
-- Tableau Dashboard
-- Interactive Visualizations
-- Feature Selection
-- Model Evaluation
-
----
-
-# 👨‍💻 About Me
+# 👨‍💻 Author
 
 ## Nayan Maity
 
-Aspiring **Data Analyst | Data Scientist | AI & Machine Learning Enthusiast**
+**Aspiring Data Analyst | Data Scientist | AI & Machine Learning Enthusiast**
 
-I enjoy building data-driven projects that transform raw datasets into meaningful insights through analysis and visualization.
+📧 Email: your-email@example.com
 
-### 📫 Connect with Me
+🔗 LinkedIn: https://linkedin.com/in/your-profile
 
-- 💼 LinkedIn: https://linkedin.com/in/YOUR-LINKEDIN
-- 💻 GitHub: https://github.com/YOUR-GITHUB
-- 📧 Email: YOUR_EMAIL@gmail.com
+💻 GitHub: https://github.com/your-username
 
 ---
 
 <div align="center">
 
-## ⭐ If you found this project helpful, please consider giving it a Star!
+### ⭐ If you found this project helpful, please give it a Star!
 
-**Happy Coding! 🚀**
+**Thank you for visiting my repository! 🚀**
 
 </div>
