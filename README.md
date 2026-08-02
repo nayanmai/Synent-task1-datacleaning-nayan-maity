@@ -10,6 +10,13 @@
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange?style=for-the-badge)
 ![Seaborn](https://img.shields.io/badge/Seaborn-Data%20Visualization-blue?style=for-the-badge)
 
+## 🎥 Demo Video
+
+Click below to watch the project demonstration.
+
+[Titanic Data Cleaning & EDA Demo](./Titanic_Project_Demo.mp4)
+
+
 **An end-to-end Data Cleaning and Exploratory Data Analysis (EDA) project using the Titanic Dataset.**
 
 </div>
