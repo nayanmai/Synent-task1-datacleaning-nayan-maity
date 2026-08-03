@@ -35,11 +35,11 @@ The objective of this project is to clean and preprocess the Titanic dataset by 
 
 **Dataset Name:** Titanic Dataset
 
-**Source:** Data Science Dojo (GitHub)
+**Source:** Kaggle
 
 **Dataset Link**
 
-https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv
+(https://www.kaggle.com/code/rolandmueller/titanic-dataset-csv)
 
 ### Dataset Information
 
@@ -309,11 +309,11 @@ jupyter notebook Titanic_EDA.ipynb
 
 **Aspiring Data Analyst | Data Scientist | AI & Machine Learning Enthusiast**
 
-📧 Email: your-email@example.com
+**📧 Email:** maity2nayan@gmail.com
 
-🔗 LinkedIn: https://linkedin.com/in/your-profile
+**🔗 LinkedIn:** https://linkedin.com/in/nayan-maity-it-workers
 
-💻 GitHub: https://github.com/your-username
+**💻 GitHub:** https://github.com/nayanmai
 
 ---
 
