@@ -16,6 +16,9 @@ Click below to watch the project demonstration.
 
 [Titanic Data Cleaning & EDA Demo](./Titanic_Project_Demo.mp4)
 
+<img width="1896" height="1007" alt="image" src="https://github.com/user-attachments/assets/40f66cad-686d-4cb4-bf42-28889605da30" />
+<img width="1890" height="1019" alt="Screenshot 2026-08-03 091604" src="https://github.com/user-attachments/assets/55600bc9-a1f7-4430-9361-ced4d4b70131" />
+
 
 **An end-to-end Data Cleaning and Exploratory Data Analysis (EDA) project using the Titanic Dataset.**
 
